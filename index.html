@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fête de la Musique 2026 — La Fête dans la Rue</title>
+    <meta
+      name="description"
+      content="Interactive Virtual Music Festival Pass for Fête de la Musique: French music history, regional city genres, 10-era revolution timeline, and legendary musicians."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="check-ribbon" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#Summary">
+        <span class="brand-mark" aria-hidden="true">♪</span>
+        <span>
+          <strong>Fête de la Musique 2026</strong>
+          <em>La Fête dans la Rue</em>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main Navigation">
+        <a href="#Summary">Summary</a>
+        <a href="#Cities">Cities</a>
+        <a href="#Timeline">Timeline</a>
+        <a href="#Musicians">Musicians</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SECTION 1: HERO + FESTIVAL SUMMARY -->
+      <section id="Summary" class="hero" aria-labelledby="hero-title">
+        <article class="pass">
+          <div class="pass-stub">
+            <p class="pass-kicker">Virtual Festival Pass</p>
+            <p class="pass-serial">N° 21-JUIN-1982</p>
+            <div class="pass-chip" aria-hidden="true"></div>
+          </div>
+          <div class="pass-body">
+            <p class="eyebrow">June 21st · Summer solstice</p>
+            <h1 id="hero-title">Fête de la Musique: Street Culture &amp; Musical Freedom</h1>
+            
+            <div class="festival-summary">
+              <p class="summary-text">
+                The Fête de la Musique was created in 1982 by Culture Minister Jack Lang under the slogan
+                <em>&ldquo;Faites de la musique!&rdquo;</em> (&ldquo;Make music!&rdquo;). Celebrated every June 21st &mdash; the summer
+                solstice &mdash; it invites musicians and music lovers of all genres to take to the streets for
+                free, open-air performances. What began as a French initiative now spans over 120 countries
+                and 1,000 cities worldwide.
+              </p>
+              <ul class="summary-bullets">
+                <li><span class="bullet-icon" aria-hidden="true">🎵</span> <strong>June 21st every year</strong> &mdash; the longest day of the year.</li>
+                <li><span class="bullet-icon" aria-hidden="true">🆓</span> <strong>All concerts are free</strong> and open to the public.</li>
+                <li><span class="bullet-icon" aria-hidden="true">🌍</span> <strong>120+ countries</strong> participate today.</li>
+              </ul>
+            </div>
+
+            <div class="cta-wrap">
+              <button id="launch-sound" class="cta" type="button">
+                🔊 Tap to Launch Festival Sound
+              </button>
+              <p class="hint">
+                <span>🔇 Silent Mode on iOS may block audio.</span>
+                <span>Browsers block unmuted automatic audio. Tap to launch background café accordion bed at 25% volume.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- SECTION 2: CITY → GENRE BOXES -->
+      <section id="Cities" class="section cities-section" aria-labelledby="cities-title">
+        <div class="section-head">
+          <p class="eyebrow">Regional Soundscapes</p>
+          <h2 id="cities-title">City &rarr; Genre Corners</h2>
+          <p>Explore 8 iconic French musical crossroads. Hover or tap each city box to reveal its story.</p>
+        </div>
+
+        <div class="city-grid" role="region" aria-label="City and genre interactive cards">
+          <!-- 1. Paris -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Paris: Pop, Rock, Chanson. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/paris.jpeg" alt="Paris cityscape and Eiffel Tower" loading="lazy" />
+              <span class="genre-badge">Pop, Rock, Chanson</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Paris</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Paris &bull; Pop, Rock, Chanson</h4>
+              <p>From Piaf's cabarets to Gainsbourg's provocations, Paris has always been France's pop laboratory. The Olympia and La Cigale remain legendary stages.</p>
+            </div>
+          </article>
+
+          <!-- 2. Lyon -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Lyon: Jazz, Electronic. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/lyon.jpeg" alt="Lyon historical rooftops and Saone river" loading="lazy" />
+              <span class="genre-badge">Jazz, Electronic</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Lyon</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Lyon &bull; Jazz, Electronic</h4>
+              <p>Lyon's Left Bank clubs nurtured jazz, and in the 1990s it became a techno hub. Nuits Sonores festival carries that energy today.</p>
+            </div>
+          </article>
+
+          <!-- 3. Marseille -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Marseille: Hip-Hop, Reggae. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/marseille.jpeg" alt="Marseille Vieux Port harbour view" loading="lazy" />
+              <span class="genre-badge">Hip-Hop, Reggae</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Marseille</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Marseille &bull; Hip-Hop, Reggae</h4>
+              <p>Birthplace of French rap — IAM put the city on the map. Mediterranean rhythms and North African influences shape its sound.</p>
+            </div>
+          </article>
+
+          <!-- 4. Toulouse -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Toulouse: Troubadour, Classical. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/toulouse.jpeg" alt="Toulouse Place du Capitole illuminated at night" loading="lazy" />
+              <span class="genre-badge">Troubadour, Classical</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Toulouse</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Toulouse &bull; Troubadour, Classical</h4>
+              <p>Medieval center of troubadour poetry. The Académie des Jeux Floraux, founded 1323, still exists today.</p>
+            </div>
+          </article>
+
+          <!-- 5. Nantes -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Nantes: Indie, Experimental. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/nantes.jpeg" alt="Chateau des ducs de Bretagne in Nantes" loading="lazy" />
+              <span class="genre-badge">Indie, Experimental</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Nantes</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Nantes &bull; Indie, Experimental</h4>
+              <p>Repurposed industrial spaces breed creative, offbeat scenes. Les Rendez-vous de l'Erdre spotlights jazz and world music.</p>
+            </div>
+          </article>
+
+          <!-- 6. Strasbourg -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Strasbourg: Classical, Cross-Border. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/strasbourg.jpeg" alt="Strasbourg Petite France canal and timbered houses" loading="lazy" />
+              <span class="genre-badge">Classical, Cross-Border</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Strasbourg</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Strasbourg &bull; Classical, Cross-Border</h4>
+              <p>Franco-German crossroads: philharmonic tradition meets contemporary experimentation.</p>
+            </div>
+          </article>
+
+          <!-- 7. Brittany -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Brittany (Rennes/Lorient): Celtic Folk. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/brittany.jpeg" alt="Historic Brittany architecture in Rennes" loading="lazy" />
+              <span class="genre-badge">Celtic Folk</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Brittany (Rennes/Lorient)</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Brittany &bull; Celtic Folk</h4>
+              <p>Kan ha Diskan call-and-response singing, fest-noz night parties, and the Interceltique festival keep Celtic traditions alive.</p>
+            </div>
+          </article>
+
+          <!-- 8. Bordeaux -->
+          <article class="city-card" tabindex="0" role="button" aria-expanded="false" aria-label="Bordeaux: Chanson, World. Tap or hover to read story.">
+            <div class="city-image-wrap">
+              <img src="assets/images/cities/bordeaux.jpeg" alt="Place de la Bourse and water mirror in Bordeaux" loading="lazy" />
+              <span class="genre-badge">Chanson, World</span>
+            </div>
+            <div class="city-info">
+              <h3 class="city-name">Bordeaux</h3>
+            </div>
+            <div class="city-overlay" aria-hidden="true">
+              <h4>Bordeaux &bull; Chanson, World</h4>
+              <p>A quieter scene with deep chanson roots, increasingly a stop for touring French artists.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 3: MUSIC REVOLUTION TIMELINE -->
+      <section id="Timeline" class="section timeline-section" aria-labelledby="timeline-title">
+        <div class="section-head">
+          <p class="eyebrow">Chronological Odyssey</p>
+          <h2 id="timeline-title">Music Revolution Timeline</h2>
+          <p>Ten transformative eras from medieval troubadours to the modern global festival stage.</p>
+        </div>
+
+        <div class="timeline-controls" aria-label="Timeline navigation controls">
+          <button id="timeline-prev" class="slider-arrow" type="button" aria-label="Previous era card" disabled>
+            &#8592; Prev
+          </button>
+          <span class="timeline-indicator" id="timeline-indicator" aria-live="polite">Era 1 of 10</span>
+          <button id="timeline-next" class="slider-arrow" type="button" aria-label="Next era card">
+            Next &#8594;
+          </button>
+        </div>
+
+        <div class="timeline-slider" id="timeline-slider" tabindex="0" aria-label="Swipeable 10-era music revolution timeline">
+          <!-- Era 1 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/medieval_troubadours.jpg" alt="Medieval trouvères and troubadours playing instruments" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">11th–13th c.</span>
+              <h3 class="era-name">Medieval &amp; Troubadours</h3>
+              <p class="era-desc">Adam de la Halle, the most famous trouvère; courtly love songs and earliest surviving vernacular theater.</p>
+            </div>
+          </article>
+
+          <!-- Era 2 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/renaissance_baroque.jpeg" alt="Renaissance and French Baroque court musicians at Versailles" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">1400s–1700s</span>
+              <h3 class="era-name">Renaissance &amp; Baroque</h3>
+              <p class="era-desc">Josquin des Prez, Roland de Lattre (Orlando di Lasso); French school of polyphony evolving into royal court spectacles under Lully.</p>
+            </div>
+          </article>
+
+          <!-- Era 3 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/romantic_era.jpg" alt="Hector Berlioz leading a 19th century Romantic orchestra" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">1800s</span>
+              <h3 class="era-name">Romantic Era</h3>
+              <p class="era-desc">Berlioz, Bizet (Carmen); French Romanticism peaks with mammoth orchestration, dramatic flair, and opera.</p>
+            </div>
+          </article>
+
+          <!-- Era 4 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/cabaret_1900.jpg" alt="Vintage Moulin Rouge and Parisian music hall cabaret poster" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">1900–1930</span>
+              <h3 class="era-name">Early 1900s &mdash; Cabaret</h3>
+              <p class="era-desc">Music hall, Mistinguett, the birth of French popular song in Parisian café-concerts and Montmartre nights.</p>
+            </div>
+          </article>
+
+          <!-- Era 5 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/chanson_francaise.jpeg" alt="Classic Parisian café accordion and vintage street microphone" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">1930s–1950s</span>
+              <h3 class="era-name">Chanson Française</h3>
+              <p class="era-desc">Édith Piaf, Charles Trenet; radio spreads chanson nationwide, crafting the immortal romantic French soundscape.</p>
+            </div>
+          </article>
+
+          <!-- Era 6 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/yeye_pop.jpeg" alt="1960s French Yé-yé pop singers and vinyl era" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">1960s</span>
+              <h3 class="era-name">Yé-yé &amp; Pop</h3>
+              <p class="era-desc">Françoise Hardy, Johnny Hallyday; American rock 'n' roll meets French pop in an explosion of youthful energy.</p>
+            </div>
+          </article>
+
+          <!-- Era 7 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/french_rock_synth.jpeg" alt="1970s and 1980s French synthesizer and rock concert stage" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">1970s–1980s</span>
+              <h3 class="era-name">French Rock &amp; Synth-pop</h3>
+              <p class="era-desc">Téléphone, Indochine; French rock finds its voice, driving new wave and stadium-sized guitar anthems.</p>
+            </div>
+          </article>
+
+          <!-- Era 8 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/french_touch_electro.jpg" alt="French Touch electronic house music festival stage" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">1990s–2000s</span>
+              <h3 class="era-name">French Touch / Electro</h3>
+              <p class="era-desc">Daft Punk, Air; France becomes a global electronic powerhouse with filtered disco house and club culture.</p>
+            </div>
+          </article>
+
+          <!-- Era 9 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/modern_pop_rap.jpg" alt="Contemporary French urban pop and hip-hop stage" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">2010s</span>
+              <h3 class="era-name">Modern Pop &amp; Rap</h3>
+              <p class="era-desc">Stromae, Angèle, Booba; streaming reshapes the industry with vibrant beats, introspective verses, and viral dominance.</p>
+            </div>
+          </article>
+
+          <!-- Era 10 -->
+          <article class="era-card">
+            <div class="era-media">
+              <img src="assets/images/timeline/global_french_era.jpeg" alt="Worldwide Fête de la Musique celebration crowd" loading="lazy" />
+            </div>
+            <div class="era-content">
+              <span class="era-years">Present</span>
+              <h3 class="era-name">Global French Era</h3>
+              <p class="era-desc">French-language music crosses borders; afrobeats, drill, and indie flourish in over 1,000 cities worldwide.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 4: MUSICIANS WITH HOVER AUDIO -->
+      <section id="Musicians" class="section musicians-section" aria-labelledby="musicians-title">
+        <div class="section-head">
+          <p class="eyebrow">10 French Legends (Chronological)</p>
+          <h2 id="musicians-title">Musicians Through The Ages</h2>
+          <p>
+            Hover any musician's portrait to hear their signature song snippet and view their biography.
+            <span class="mobile-only-hint">(Tap portrait on phone to toggle snippet &amp; bio).</span>
+          </p>
+        </div>
+
+        <div class="musician-grid" role="region" aria-label="10 Musician cards with interactive audio playback">
+          <!-- 1. Adam de la Halle -->
+          <article class="musician-card" data-musician="adam_de_la_halle" tabindex="0" role="button" aria-expanded="false" aria-label="Adam de la Halle (c. 1240–1288). Famous song: Jeu de Robin et Marion. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/adam_de_la_halle.jpg" alt="Adam de la Halle medieval portrait miniature" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #1 &bull; 13th c. Trouvère</p>
+                <h3 class="musician-name">Adam de la Halle</h3>
+                <p class="musician-years">c. 1240–1288</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>Jeu de Robin et Marion</em></p>
+                <p class="musician-bio">Earliest named French composer-poet, pioneer of secular musical theater and courtly chansons in medieval Arras.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Adam de la Halle</strong>
+              <span>c. 1240–1288</span>
+            </div>
+            <audio preload="auto" src="assets/audio/adam_de_la_halle.mp3"></audio>
+          </article>
+
+          <!-- 2. Josquin des Prez -->
+          <article class="musician-card" data-musician="josquin_des_prez" tabindex="0" role="button" aria-expanded="false" aria-label="Josquin des Prez (c. 1450–1521). Famous song: Missa Pange Lingua. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/josquin_des_prez.jpeg" alt="Josquin des Prez woodcut portrait" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #2 &bull; Renaissance Polyphony</p>
+                <h3 class="musician-name">Josquin des Prez</h3>
+                <p class="musician-years">c. 1450–1521</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>Missa Pange Lingua</em></p>
+                <p class="musician-bio">Master of Renaissance vocal counterpoint whose complex choral polyphony defined European sacred music.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Josquin des Prez</strong>
+              <span>c. 1450–1521</span>
+            </div>
+            <audio preload="auto" src="assets/audio/josquin_des_prez.mp3"></audio>
+          </article>
+
+          <!-- 3. Jean-Baptiste Lully -->
+          <article class="musician-card" data-musician="jean_baptiste_lully" tabindex="0" role="button" aria-expanded="false" aria-label="Jean-Baptiste Lully (1632–1687). Famous song: Armide. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/jean_baptiste_lully.jpeg" alt="Jean-Baptiste Lully portrait by Paul Mignard" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #3 &bull; French Baroque</p>
+                <h3 class="musician-name">Jean-Baptiste Lully</h3>
+                <p class="musician-years">1632–1687</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>Armide</em></p>
+                <p class="musician-bio">Court composer to the Sun King Louis XIV, creating French opera and regal overtures at Versailles.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Jean-Baptiste Lully</strong>
+              <span>1632–1687</span>
+            </div>
+            <audio preload="auto" src="assets/audio/jean_baptiste_lully.mp3"></audio>
+          </article>
+
+          <!-- 4. Hector Berlioz -->
+          <article class="musician-card" data-musician="hector_berlioz" tabindex="0" role="button" aria-expanded="false" aria-label="Hector Berlioz (1803–1869). Famous song: Symphonie fantastique. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/hector_berlioz.jpeg" alt="Hector Berlioz 19th century portrait" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #4 &bull; French Romanticism</p>
+                <h3 class="musician-name">Hector Berlioz</h3>
+                <p class="musician-years">1803–1869</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>Symphonie fantastique</em></p>
+                <p class="musician-bio">Revolutionary Romantic visionary whose colossal orchestral forces and idée fixe redefined symphonic narrative.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Hector Berlioz</strong>
+              <span>1803–1869</span>
+            </div>
+            <audio preload="auto" src="assets/audio/hector_berlioz.mp3"></audio>
+          </article>
+
+          <!-- 5. Édith Piaf -->
+          <article class="musician-card" data-musician="edith_piaf" tabindex="0" role="button" aria-expanded="false" aria-label="Édith Piaf (1915–1963). Famous song: La Vie en Rose. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/edith_piaf.jpeg" alt="Édith Piaf classic French chanson portrait" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #5 &bull; Chanson Française</p>
+                <h3 class="musician-name">Édith Piaf</h3>
+                <p class="musician-years">1915–1963</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>La Vie en Rose</em></p>
+                <p class="musician-bio">The legendary &ldquo;Little Sparrow&rdquo; whose passionate street vibrato and tragic romanticism conquered hearts across the world.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Édith Piaf</strong>
+              <span>1915–1963</span>
+            </div>
+            <audio preload="auto" src="assets/audio/edith_piaf.mp3"></audio>
+          </article>
+
+          <!-- 6. Charles Trenet -->
+          <article class="musician-card" data-musician="charles_trenet" tabindex="0" role="button" aria-expanded="false" aria-label="Charles Trenet (1913–2001). Famous song: La Mer. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/charles_trenet.jpg" alt="Charles Trenet joyful chanson portrait" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #6 &bull; Swing Chanson</p>
+                <h3 class="musician-name">Charles Trenet</h3>
+                <p class="musician-years">1913–2001</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>La Mer</em></p>
+                <p class="musician-bio">&ldquo;Le Fou Chantant&rdquo; brought infectious swing jazz vitality and poetic lyricism to classic French popular song.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Charles Trenet</strong>
+              <span>1913–2001</span>
+            </div>
+            <audio preload="auto" src="assets/audio/charles_trenet.mp3"></audio>
+          </article>
+
+          <!-- 7. Hugues Aufray -->
+          <article class="musician-card" data-musician="hugues_aufray" tabindex="0" role="button" aria-expanded="false" aria-label="Hugues Aufray (1929–). Famous song: Santiano. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/hugues_aufray.jpg" alt="Hugues Aufray acoustic folk portrait" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #7 &bull; Folk &amp; Chanson</p>
+                <h3 class="musician-name">Hugues Aufray</h3>
+                <p class="musician-years">1929–</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>Santiano</em></p>
+                <p class="musician-bio">Pioneering folk troubadour who introduced acoustic Americana and legendary sea shanties into beloved French collective memory.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Hugues Aufray</strong>
+              <span>1929–</span>
+            </div>
+            <audio preload="auto" src="assets/audio/hugues_aufray.mp3"></audio>
+          </article>
+
+          <!-- 8. Serge Gainsbourg -->
+          <article class="musician-card" data-musician="serge_gainsbourg" tabindex="0" role="button" aria-expanded="false" aria-label="Serge Gainsbourg (1928–1991). Famous song: La Javanaise. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/serge_gainsbourg.jpeg" alt="Serge Gainsbourg portrait" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #8 &bull; Avant-Garde Pop</p>
+                <h3 class="musician-name">Serge Gainsbourg</h3>
+                <p class="musician-years">1928–1991</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>La Javanaise</em></p>
+                <p class="musician-bio">Provocative musical genius who revolutionized French pop through jazz, reggae, sensual wordplay, and cinematic arrangements.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Serge Gainsbourg</strong>
+              <span>1928–1991</span>
+            </div>
+            <audio preload="auto" src="assets/audio/serge_gainsbourg.mp3"></audio>
+          </article>
+
+          <!-- 9. Daft Punk -->
+          <article class="musician-card" data-musician="daft_punk" tabindex="0" role="button" aria-expanded="false" aria-label="Daft Punk (1993–2021). Famous song: One More Time. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/daft_punk.jpeg" alt="Daft Punk iconic robot helmets" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #9 &bull; French Touch Electro</p>
+                <h3 class="musician-name">Daft Punk</h3>
+                <p class="musician-years">1993–2021</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>One More Time</em></p>
+                <p class="musician-bio">Legendary helmeted duo Guy-Manuel and Thomas who transformed electronic music worldwide with filtered disco-house grooves.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Daft Punk</strong>
+              <span>1993–2021</span>
+            </div>
+            <audio preload="auto" src="assets/audio/daft_punk.mp3"></audio>
+          </article>
+
+          <!-- 10. Stromae -->
+          <article class="musician-card" data-musician="stromae" tabindex="0" role="button" aria-expanded="false" aria-label="Stromae (1985–). Famous song: Alors on danse. Tap or hover to listen.">
+            <div class="musician-media">
+              <img src="assets/images/musicians/stromae.jpeg" alt="Stromae contemporary concert portrait" loading="lazy" />
+              <div class="musician-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="musician-overlay">
+                <p class="musician-tag">Musician #10 &bull; Modern Pop &amp; Electro</p>
+                <h3 class="musician-name">Stromae</h3>
+                <p class="musician-years">1985–</p>
+                <p class="musician-song"><strong>Signature song:</strong> <em>Alors on danse</em></p>
+                <p class="musician-bio">Modern visionary fusing poignant storytelling with infectious electronic beats, hip-hop, and global street culture.</p>
+              </div>
+            </div>
+            <div class="musician-footer">
+              <strong>Stromae</strong>
+              <span>1985–</span>
+            </div>
+            <audio preload="auto" src="assets/audio/stromae.mp3"></audio>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION 5: REVISED 4-COLUMN FOOTER -->
+    <footer class="site-footer" id="credits">
+      <div class="footer-grid">
+        <!-- Column 1: Team Credits -->
+        <div class="footer-col col-credits">
+          <h3>Team Credits</h3>
+          <ul class="credits-list">
+            <li><strong>Logistics:</strong> B.Madhavan</li>
+            <li><strong>Web:</strong> Mahanish</li>
+            <li><strong>Presentation:</strong> Arunav </li>
+            <li><strong>Music:</strong> Aditya & Archit</li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col col-links">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#Summary">#Summary</a></li>
+            <li><a href="#Cities">#Cities</a></li>
+            <li><a href="#Timeline">#Timeline</a></li>
+            <li><a href="#Musicians">#Musicians</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Custom QR Code -->
+        <div class="footer-col col-qr">
+          <h3>Mobile Pass</h3>
+          <div class="qr-container">
+            <img src="your-qr-code.png" alt="QR Code to open Fête de la Musique website on mobile" style="max-width: 100%; height: auto; border-radius: 8px;" />
+            <p>Scan to open on your phone</p>
+          </div>
+        </div>
+
+        <!-- Column 4: Quiz Link Placeholder -->
+        <div class="footer-col col-quiz">
+          <h3>Classroom Quiz</h3>
+          <p class="quiz-hint">Test your French music knowledge after the presentation:</p>
+          <div class="quiz-box">
+            <a href="#" class="quiz-link">[Insert Quiz Link Here](#)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="fine">Fête de la Musique &bull; June 21 &bull; <em>Faites de la musique!</em> &mdash; All concerts free and open to the public.</p>
+      </div>
+    </footer>
+
+    <!-- PERSISTENT FLOATING AUDIO CONTROLLER -->
+    <div class="floater" id="floater" hidden>
+      <button id="vinyl" class="vinyl" type="button" aria-label="Play festival sound" aria-pressed="false">
+        <span></span>
+      </button>
+      <p>Festival sound</p>
+    </div>
+
+    <!-- BACKGROUND FESTIVAL AUDIO -->
+    <audio id="hero-audio" loop preload="none" src="assets/audio/festival-bed.mp3"></audio>
+
+    <script src="app.js"></script>
+  </body>
+</html>
